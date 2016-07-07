@@ -1,0 +1,355 @@
+.navbar-toggle{
+	border-color:white;
+}
+.navbar-toggle .icon-bar{
+	background: white;
+}
+
+.first_page{
+	background-image: url(../image/image1.jpg);
+	 background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    width: 100%;
+    /*min-height: 46.5em;*/
+}
+
+p.first_page_inner1
+{
+	font-size: 48px;
+	color:white;
+	padding-top: 2em;
+}
+
+.button_first_page{
+	width:260px ;
+	height: 45px;
+	border:1px solid white;
+	margin-top: 3em;
+	    color: white;
+    padding-top: 11px;
+    cursor: pointer;
+}
+
+span.menu_homepage{
+    color: white;
+    font-size: 14px;
+}
+span.active_menu{
+	color:#a8aeb5;
+}
+span.menu_homepage:hover, span.menu_homepage:focus, span.menu_homepage:active{
+	color:#a8aeb5;
+}
+.nav>li>a:hover, .nav>li>a:focus{
+	background: transparent;
+	color:#a8aeb5;
+	
+}
+
+.frst_page_inr2
+{
+	margin-top: 1em;
+}
+
+img.logo{
+	    position: relative;
+    top: -3.5em;
+}
+
+img.arrow_frst_pag{
+	padding-top: 1.25em;
+}
+/*---------------------------------second page--------------------------------------*/
+
+.second_page{
+	padding-right: 0;
+}
+
+img.second_page_imag, img.fifth_page_imag{
+width: 100%;
+height: 44.45em;
+}
+
+.second_page_div
+{
+	padding-right: 0;
+}
+
+p.second_pag_inner1{
+	font-size: 24px;
+	color:#b2b2b2;
+}
+
+p.second_pag_inner2{
+	font-size: 36px;
+	color:#636363;
+	position: relative;
+    top: -13px;
+}
+
+.button_second_page{
+	width:250px ;
+	height: 45px;
+	border:1px solid #d6a010;
+	margin-top: 2em;
+	    color: #d6a010;
+    padding-top: 9px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 6em;
+}
+
+.second_page_lft{
+	padding-top: 20%;
+}
+
+img.secnd_pag_utub{
+	    position: absolute;
+    top: 0;
+        padding-left: 46%;
+    padding-top: 37%;
+    cursor:pointer;
+}
+
+/*-------------------------------------third page---------------------------------*/
+
+.third_page{
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+p.third_page_inner1{
+	font-size: 36px;
+	color:#636363;
+}
+
+p.third_page_inner2{
+	font-size: 16px;
+	color:#636363;
+	line-height: 25px;
+}
+
+p.third_page_inner3{
+	font-size: 30px;
+	color: #636363;
+	    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+}
+
+img.third_page_circl
+{
+	width: 118px;
+	margin-top: 2em;
+}
+p.third_page_inner4{
+	font-size: 18px;
+	color:#636363;
+}
+
+.third_rit_pag{
+	margin-left: 5em;
+}
+
+
+/*--------------------------fourth page---------------------------------*/
+
+.fourth_page, .sixth_page{
+padding-left: 0;
+margin-top: -1px;
+}
+
+.fourth_page_div, .sixth_page_div, .seventh_page_div{
+	padding-right: 0;
+}
+
+img.fourth_page_imag, img.sixth_page_imag, img.seventh_page_imag{
+	width: 100%;
+	height:44.5em;
+}
+p.fourth_pag_inner1
+{
+	font-size: 18px;
+	color:#b2b2b2;
+	line-height: 28px;
+}
+
+p.fourth_pag_inner2
+{
+	font-size: 36px;
+	color: #636363;
+}
+
+.fourth_page_right, .sixth_page_right, .seventh_page_right{
+	padding-top: 20%;
+}
+
+img.share1 {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+}
+
+img.share2{
+	 position: absolute;
+    bottom: 1.5em;
+     left: 2.5em;
+}
+img.share3{
+	 position: absolute;
+    bottom: 1.5em;
+     left: 2.5em;
+}
+/*-------------------------fifth page-------------------------*/
+.fifth_page, .seventh_page{
+	padding-right: 0;
+	margin-top:-1px;
+}
+
+img.fifth_page_imag{
+	width: 100%;
+	height: 44.5em;
+}
+
+.fifth_page_div
+{
+	padding-right: 0;
+}
+/*--------------------contact-----------------------------------*/
+
+.footer_page{
+	background: #282828;
+	padding: 1.8em 0px;
+	top:-1px;
+	height: 18.7em;
+}
+p.contact_inner1{
+	font-size: 36px;
+	color:#636363;
+}
+
+p.contct_inner2{
+	font-size: 36px;
+	color: white;
+}
+
+span.contact_inner3{
+	color: #d6a010;
+	    position: relative;
+    left: 7px;
+    top: 7px;
+}
+
+#map{
+	 width: 100%;
+  height: 400px;
+}
+/*-----------------------------media query---------------------------------------*/
+
+@media only screen and (max-width: 320px) {
+
+.button_first_page, .button_second_page{
+	   position: relative;
+    left: -6px;
+    width: 185px;
+}
+
+.second_page_div{
+	position: relative;
+	left: -1em;
+}
+.fifth_page_div{
+	position: relative;
+    left: -1em;
+    padding-bottom: 6em;
+}
+
+.seventh_page_div{
+	position: relative;
+	left: -1em;
+	padding-bottom: 3em;
+}
+
+.third_rit_pag{
+	margin-left: 0;
+}
+img.share2 {
+    position: absolute;
+    bottom: 3.5em;
+    left: 1em;
+}
+img.secnd_pag_utub {
+    padding-left: 33%;
+    padding-top: 28%;
+}
+img.logo{
+	width: 3em;
+}
+}
+@media only screen and (max-width: 600px) {
+img.fourth_page_imag, img.sixth_page_imag, img.seventh_page_imag,img.fifth_page_imag,img.second_page_imag, img.fifth_page_imag{
+	height: 20em;
+
+	}
+	img.logo{
+	width: 3em;
+}
+p.first_page_inner1 {
+    font-size: 28px;
+    color: white;
+    /* padding-top: 2em; */
+}
+p.first_page_inner1 {
+    font-size: 28px;
+    color: white;
+     padding-top: 0em; 
+}
+img.share2 {
+    position: absolute;
+    bottom: 4.5em;
+    left: 1.5em;
+}
+img.secnd_pag_utub {
+    padding-left: 40%;
+    padding-top: 30%;
+    cursor: pointer;
+}
+div#myNavbar{
+    position: relative;
+    left: -9em;
+    margin-bottom: 2em;
+}
+/*button.navbar-toggle.collapsed
+{
+	position: relative;
+    left: -15em;
+}*/
+button.navbar-toggle{
+	position: relative;
+    left: -15em;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+.third_rit_pag{
+	margin-left: 0;
+}
+.second_page_div{
+	padding-left: 0;
+}
+.fifth_page_div{
+	padding-left: 0;
+	padding-bottom: 3em;
+}
+button.navbar-toggle{
+	position: relative;
+
+}
+div#myNavbar{
+    position: relative;
+    float: left;
+    left: -15em;
+    margin-bottom: 2em;
+}
+}
