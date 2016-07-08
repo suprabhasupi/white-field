@@ -65,10 +65,10 @@
                 <div class="col-md-10 col-sm-10 col-xs-12">
                     <p class="first_page_inner1 source_extra_light text-center">New White Field, Eco friendly, Environment friendly and conscious living spaces</p>
                     <div class="button_first_page center-block text-center">
-                        <p class="source_regular">SALE BY INVITATION ONLY</p>
+                      <a href="NWF_broucher_Final.pdf" download><p class="source_regular">DOWNLAOD E-BROCHURE</p></a>
                     </div>
                     <a href="#secondPage">
-                        <img src="image/arrow.png" class="center-block arrow_frst_pag"></a>
+                        <img src="image/arrow.png" class="center-block arrow_frst_pag blink"></a>
                 </div>
                 <div class="col-md-1 col-sm-1"></div>
             </div>
@@ -84,12 +84,29 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 second_page_div">
-                    <img src="image/image3.jpg" class="second_page_imag">
-                    <img src="image/image14.png" class="secnd_pag_utub">
+                    <!-- <img src="image/image3.jpg" class="second_page_imag"> -->
+                    <iframe src="image/house.mp4" frameborder="0" width="890px" height="920px" frameborder="0" allowfullscreen ></iframe>
+                   <!--  <video width="100%" height="auto" controls>
+                        <source src="image/house.mp4" type="video/mp4">
+                    </video> -->
+                    <img src="image/image14.png" class="secnd_pag_utub" onclick="">
                     <!-- <video width="800" controls>
   <source src="mov_bbb.mp4" type="video/mp4">
 </video>
  -->
+                    <script type="text/javascript">
+                    var blink = function() {
+                        $('.blink').animate({
+                            opacity: '0'
+                        }, function() {
+                            $(this).animate({
+                                opacity: '1'
+                            }, blink);
+                        });
+                    }
+
+                    blink();
+                    </script>
                 </div>
             </div>
         </div>
@@ -200,10 +217,40 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 center-block text-center">
                         <img src="image/map_icon.png">
                         <!-- <span class="text-center contact_inner3 source_light">New White Field,Hoskote,Bangalore</span> -->
-                        <a target="_blank" href="javascript:window.open('https://www.google.co.in/maps/@13.0698799,77.7792969,14z','_blank','location=yes');" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><span class="text-center contact_inner3 source_light">New White Field,Hoskote,Bangalore</span></a>
+                        <a target="_blank" href="https://www.google.co.in/maps/@13.0698799,77.7792969,14z" target='_blank' title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><span class="text-center contact_inner3 source_light">New White Field,Hoskote,Bangalore</span></a>
                     </div>
                 </div>
             </footer>
+
+            <script type="text/javascript">
+            $(function() {
+                $(".fourth_page_imag, .sixth_page_imag").on({
+                    mouseenter: function() {
+                        $(this).attr('src', 'image/image8_1.jpg');
+                        $(this).css('transition', '2s');
+                    },
+                    mouseleave: function() {
+                        $(this).attr('src', 'image/image8.jpg');
+                        $(this).css('transition', '2s');
+                    }
+                });
+
+            });
+
+            $(function() {
+                $(".seventh_page_imag, .fifth_page_imag").on({
+                    mouseenter: function() {
+                        $(this).attr('src', 'image/image9_1.jpg');
+                        $(this).css('transition', '2s');
+                    },
+                    mouseleave: function() {
+                        $(this).attr('src', 'image/image9.jpg');
+                        $(this).css('transition', '2s');
+                    }
+                });
+
+            });
+            </script>
             <!-- </div> -->
             <!-- <script type="text/javascript">
   function sticky_relocate() {

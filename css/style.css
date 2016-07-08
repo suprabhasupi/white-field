@@ -13,7 +13,13 @@
     width: 100%;
     /*min-height: 46.5em;*/
 }
+a:hover{
+	text-decoration: none;
+}
 
+.blink{
+	 transition: color 1s;
+}
 p.first_page_inner1
 {
 	font-size: 48px;
@@ -45,6 +51,12 @@ span.menu_homepage:hover, span.menu_homepage:focus, span.menu_homepage:active{
 	background: transparent;
 	color:#a8aeb5;
 	
+}
+
+.button_first_page:hover{
+	background: #a8aeb5;
+	transition: 1s;
+	border-color:#a8aeb5;
 }
 
 .frst_page_inr2
@@ -100,6 +112,12 @@ p.second_pag_inner2{
     margin-bottom: 6em;
 }
 
+.button_second_page:hover{
+	border:1px solid white;
+	   color: white;
+	   background: #d6a010;
+	   transition: 1s;
+}
 .second_page_lft{
 	padding-top: 20%;
 }
@@ -161,6 +179,7 @@ margin-top: -1px;
 
 .fourth_page_div, .sixth_page_div, .seventh_page_div{
 	padding-right: 0;
+	padding-left: 0;
 }
 
 img.fourth_page_imag, img.sixth_page_imag, img.seventh_page_imag{
@@ -188,17 +207,20 @@ img.share1 {
     position: absolute;
     bottom: 1.5em;
     right: 1.5em;
+    cursor: pointer;
 }
 
 img.share2{
 	 position: absolute;
     bottom: 1.5em;
      left: 2.5em;
+      cursor: pointer;
 }
 img.share3{
 	 position: absolute;
     bottom: 1.5em;
      left: 2.5em;
+      cursor: pointer;
 }
 /*-------------------------fifth page-------------------------*/
 .fifth_page, .seventh_page{
@@ -221,7 +243,7 @@ img.fifth_page_imag{
 	background: #282828;
 	padding: 1.8em 0px;
 	top:-1px;
-	height: 18.7em;
+	min-height: 18.7em;
 }
 p.contact_inner1{
 	font-size: 36px;
@@ -240,6 +262,13 @@ span.contact_inner3{
     top: 7px;
 }
 
+a{
+	color: white;
+}
+a:hover, a:focus{
+	text-decoration: none;
+	color: white;
+}
 span.text-center.contact_inner3.source_light{
 	text-decoration: none;
 }
