@@ -85,15 +85,79 @@
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 second_page_div">
                     <!-- <img src="image/image3.jpg" class="second_page_imag"> -->
-                    <iframe src="image/house.mp4" frameborder="0" width="890px" height="920px" frameborder="0" allowfullscreen ></iframe>
-                   <!--  <video width="100%" height="auto" controls>
+                   <!--  <iframe src="https://www.youtube.com/v/J4rBDsimsmQ" frameborder="0" width="100%" height="670px" frameborder="0" autoplay="false" scrolling="no" controls="0" allowfullscreen ></iframe> -->
+                   <div id="player"></div>
+                  <img src="image/image14.png" class="secnd_pag_utub">
+                   
+<!-- <div class="fullscreen-bg">
+                    <video width="100%" height="auto" class="fullscreen-bg__video" controls>
                         <source src="image/house.mp4" type="video/mp4">
-                    </video> -->
-                    <img src="image/image14.png" class="secnd_pag_utub" onclick="">
+
+                    </video>
+                </div> -->
+       <!--                <div id="videoCaption"></div> -->
+
+
+                    <!-- <img src="image/image14.png" class="secnd_pag_utub"> -->
+
+
                     <!-- <video width="800" controls>
   <source src="mov_bbb.mp4" type="video/mp4">
 </video>
  -->
+<!-- 
+                    <script>
+
+                        $(".secnd_pag_utub").click(function(){
+    var vlink=$(".second_page_div").find("iframe").attr("src");
+    $("iframe").attr("src",vlink);
+    });
+                    </script> -->
+
+                    <script type="text/javascript">
+                        var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+onYouTubeIframeAPIReady = function () {
+    player = new YT.Player('player', {
+        height: '670px',
+        width: '100%',
+        videoId: 'J4rBDsimsmQ',  // youtube video id
+        playerVars: {
+            'autoplay': 0,
+            'rel': 0,
+            'showinfo': 0,
+            'modestbranding': 1,
+            'autohide': 2,
+            'border':0,
+           
+            'enablejsapi':1,
+            'controls':2
+
+            
+
+        },
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+onPlayerStateChange = function (event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        $('.secnd_pag_utub').fadeIn('normal');
+    }
+}
+
+$(document).on('click', '.secnd_pag_utub', function () {
+    $(this).fadeOut('normal');
+    player.playVideo();
+});
+                    </script>
                     <script type="text/javascript">
                     var blink = function() {
                         $('.blink').animate({
@@ -106,6 +170,13 @@
                     }
 
                     blink();
+                    </script>
+
+                    <script>
+                   console.log( $(window).height());
+
+                   $("iframe").css('min-height','667px');
+
                     </script>
                 </div>
             </div>
@@ -153,16 +224,16 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center fourth_page_right">
                     <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 source_light">Feature #1</p>
+                    <p class="fourth_pag_inner2 source_light fourth_pag_inner2_1">Feature #1</p>
                 </div>
             </div>
         </div>
         <!-- ------------------------fifth page----------------------- -->
         <div class="section" data-anchor="5thPage">
             <div class="container col-md-12 col-sm-12 col-xs-12 fifth_page">
-                <div class="col-md-4 col-sm-4 col-xs-12 text-center fourth_page_right">
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center fourth_page_right fourth_page_right_2">
                     <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 source_light">Feature #2</p>
+                    <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">Feature #2</p>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 fifth_page_div">
                     <img src="image/image9.jpg" class="fifth_page_imag">
@@ -179,7 +250,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center sixth_page_right">
                     <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 source_light">Feature #3</p>
+                    <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">Feature #3</p>
                 </div>
             </div>
         </div>
