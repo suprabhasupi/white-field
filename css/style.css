@@ -73,6 +73,7 @@ span.menu_homepage:active {
     background: #a8aeb5;
     transition: 1s;
     border-color: #a8aeb5;
+    box-shadow:0px 0px 7px 1px #151515;
 }
 
 .frst_page_inr2 {
@@ -230,7 +231,7 @@ p.fourth_pag_inner2 {
 .fourth_page_right,
 .sixth_page_right,
 .seventh_page_right {
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 img.share1 {

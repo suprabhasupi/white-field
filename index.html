@@ -63,9 +63,11 @@
                 <img src="image/image2.png" class="center-block logo">
                 <div class="col-md-1 col-sm-1"></div>
                 <div class="col-md-10 col-sm-10 col-xs-12">
-                    <p class="first_page_inner1 source_extra_light text-center">New White Field, Eco friendly, Environment friendly and conscious living spaces</p>
+                    <p class="first_page_inner1 source_extra_light text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
                     <div class="button_first_page center-block text-center">
-                      <a href="NWF_broucher_Final.pdf" download><p class="source_regular">DOWNLAOD E-BROCHURE</p></a>
+                        <a href="#" download>
+                            <p class="source_regular">DOWNLOAD BROCHURE</p>
+                        </a>
                     </div>
                     <a href="#secondPage">
                         <img src="image/arrow.png" class="center-block arrow_frst_pag blink"></a>
@@ -84,79 +86,51 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 second_page_div">
-                    <!-- <img src="image/image3.jpg" class="second_page_imag"> -->
-                   <!--  <iframe src="https://www.youtube.com/v/J4rBDsimsmQ" frameborder="0" width="100%" height="670px" frameborder="0" autoplay="false" scrolling="no" controls="0" allowfullscreen ></iframe> -->
-                   <div id="player"></div>
-                  <img src="image/image14.png" class="secnd_pag_utub">
-                   
-<!-- <div class="fullscreen-bg">
-                    <video width="100%" height="auto" class="fullscreen-bg__video" controls>
-                        <source src="image/house.mp4" type="video/mp4">
-
-                    </video>
-                </div> -->
-       <!--                <div id="videoCaption"></div> -->
-
-
-                    <!-- <img src="image/image14.png" class="secnd_pag_utub"> -->
-
-
-                    <!-- <video width="800" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-</video>
- -->
-<!-- 
-                    <script>
-
-                        $(".secnd_pag_utub").click(function(){
-    var vlink=$(".second_page_div").find("iframe").attr("src");
-    $("iframe").attr("src",vlink);
-    });
-                    </script> -->
-
+                    <div id="player"></div>
+                    <img src="image/image14.png" class="secnd_pag_utub">
                     <script type="text/javascript">
-                        var tag = document.createElement('script');
-tag.src = "http://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    var tag = document.createElement('script');
+                    tag.src = "http://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
+                    var player;
 
-onYouTubeIframeAPIReady = function () {
-    player = new YT.Player('player', {
-        height: '670px',
-        width: '100%',
-        videoId: 'J4rBDsimsmQ',  // youtube video id
-        playerVars: {
-            'autoplay': 0,
-            'rel': 0,
-            'showinfo': 0,
-            'modestbranding': 1,
-            'autohide': 2,
-            'border':0,
-           
-            'enablejsapi':1,
-            'controls':2
+                    onYouTubeIframeAPIReady = function() {
+                        player = new YT.Player('player', {
+                            height: '670px',
+                            width: '100%',
+                            videoId: 'J4rBDsimsmQ', // youtube video id
+                            playerVars: {
+                                'autoplay': 0,
+                                'rel': 0,
+                                'showinfo': 0,
+                                'modestbranding': 1,
+                                'autohide': 2,
+                                'border': 0,
 
-            
+                                'enablejsapi': 1,
+                                'controls': 2
 
-        },
-        events: {
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
 
-onPlayerStateChange = function (event) {
-    if (event.data == YT.PlayerState.ENDED) {
-        $('.secnd_pag_utub').fadeIn('normal');
-    }
-}
 
-$(document).on('click', '.secnd_pag_utub', function () {
-    $(this).fadeOut('normal');
-    player.playVideo();
-});
+                            },
+                            events: {
+                                'onStateChange': onPlayerStateChange
+                            }
+                        });
+                    }
+
+                    onPlayerStateChange = function(event) {
+                        if (event.data == YT.PlayerState.ENDED) {
+                            $('.secnd_pag_utub').fadeIn('normal');
+                        }
+                    }
+
+                    $(document).on('click', '.secnd_pag_utub', function() {
+                        $(this).fadeOut('normal');
+                        player.playVideo();
+                    });
                     </script>
                     <script type="text/javascript">
                     var blink = function() {
@@ -171,12 +145,10 @@ $(document).on('click', '.secnd_pag_utub', function () {
 
                     blink();
                     </script>
-
                     <script>
-                   console.log( $(window).height());
+                    console.log($(window).height());
 
-                   $("iframe").css('min-height','667px');
-
+                    $("iframe").css('min-height', '667px');
                     </script>
                 </div>
             </div>
@@ -188,7 +160,7 @@ $(document).on('click', '.secnd_pag_utub', function () {
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-8 col-sm-8 col-xs-12 text-center">
                         <p class="third_page_inner1 source_light">Why us?</p>
-                        <p class="source_light third_page_inner2">BLISS has a new meaning - New White Field Township, at Hoskote. Enjoy your eco- friendly living in Tranquility and Peace. A township of high standards, residences comprimising of villas and row houses, limited plots, commercial space and nature friendly amenities are at your doorstep. </p>
+                        <p class="source_light third_page_inner2">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                     </div>
                     <div class="col-md-2 col-sm-2"></div>
                 </div>
@@ -223,8 +195,8 @@ $(document).on('click', '.secnd_pag_utub', function () {
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center fourth_page_right">
-                    <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 source_light fourth_pag_inner2_1">Feature #1</p>
+                    <p class="fourth_pag_inner1 source_extra_light">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                    <p class="fourth_pag_inner2 source_light fourth_pag_inner2_1">First FIVE STAR Township in Hoskote</p>
                 </div>
             </div>
         </div>
@@ -232,8 +204,8 @@ $(document).on('click', '.secnd_pag_utub', function () {
         <div class="section" data-anchor="5thPage">
             <div class="container col-md-12 col-sm-12 col-xs-12 fifth_page">
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center fourth_page_right fourth_page_right_2">
-                    <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">Feature #2</p>
+                    <p class="fourth_pag_inner1 source_extra_light">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                    <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">Right on Bangalore- Chennai Express way</p>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 fifth_page_div">
                     <img src="image/image9.jpg" class="fifth_page_imag">
@@ -249,8 +221,8 @@ $(document).on('click', '.secnd_pag_utub', function () {
                     <img src="image/share.png" class="share1">
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center sixth_page_right">
-                    <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">Feature #3</p>
+                    <p class="fourth_pag_inner1 source_extra_light">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">50- 75% Cost appreciation in next two years.</p>
                 </div>
             </div>
         </div>
@@ -258,8 +230,8 @@ $(document).on('click', '.secnd_pag_utub', function () {
         <div class="section" data-anchor="7thPage">
             <div class="container col-md-12 col-sm-12 col-xs-12 seventh_page">
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center seventh_page_right">
-                    <p class="fourth_pag_inner1 source_extra_light">Lovely and peaceful entrance design. The entrance is designed such a way that it will preserve traditional and ethical values.</p>
-                    <p class="fourth_pag_inner2 source_light">Feature #4</p>
+                    <p class="fourth_pag_inner1 source_extra_light">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                    <p class="fourth_pag_inner2 source_light">Green Living - One Lakh Trees & Water Bodies</p>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 seventh_page_div">
                     <img src="image/image9.jpg" class="seventh_page_imag">
@@ -277,22 +249,20 @@ $(document).on('click', '.secnd_pag_utub', function () {
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-3 col-sm-3 col-xs-12 center-block text-center">
                         <img src="image/image13.png">
-                        <p class="source_extra_light contct_inner2">+919243176454</p>
+                        <p class="source_extra_light contct_inner2">+91 7090037073</p>
                     </div>
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-3 col-sm-3 col-xs-12 center-block text-cente">
                         <img src="image/image12.png" class="center-block">
-                        <p class="source_extra_light text-center contct_inner2">nwf@teclever.com</p>
+                        <p class="source_extra_light text-center contct_inner2">design@googlewiki.in</p>
                     </div>
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-12 col-sm-12 col-xs-12 center-block text-center">
                         <img src="image/map_icon.png">
-                        <!-- <span class="text-center contact_inner3 source_light">New White Field,Hoskote,Bangalore</span> -->
-                        <a target="_blank" href="https://www.google.co.in/maps/@13.0698799,77.7792969,14z" target='_blank' title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><span class="text-center contact_inner3 source_light">New White Field,Hoskote,Bangalore</span></a>
+                        <a target="_blank" href="https://www.google.co.in/maps/@12.9103037,77.6026796,15z" target='_blank' title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><span class="text-center contact_inner3 source_light">BTM 2nd Stage,Bangalore</span></a>
                     </div>
                 </div>
             </footer>
-
             <script type="text/javascript">
             $(function() {
                 $(".fourth_page_imag, .sixth_page_imag").on({
@@ -322,26 +292,6 @@ $(document).on('click', '.secnd_pag_utub', function () {
 
             });
             </script>
-            <!-- </div> -->
-            <!-- <script type="text/javascript">
-  function sticky_relocate() {
-        var window_top = $(window).scrollTop();
-
-        if (window_top > 100) {
-          $('.backTOtop').fadeIn();
-        } else {
-          $('.backTOtop').fadeOut();
-        }
-        
-      }
-
-      $(function () {
-        $(window).scroll(sticky_relocate);
-        sticky_relocate();
-      });
-
-  
-  </script> -->
         </div>
     </div>
 </body>
